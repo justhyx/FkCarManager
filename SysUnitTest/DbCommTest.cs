@@ -19,7 +19,7 @@ namespace SysUnitTest
         [TestMethod]
         public void SelectDateTest()
         {
-            object o = CommonDbTool.Scalar("Select date('now');");
+            object o = CommonDbTool.Scalar("Select date('now', 'localtime');");//要加 , 'localtime' 不然时间不对
             Assert.IsNotNull(o, "查不到当前时间");
             try
             {
