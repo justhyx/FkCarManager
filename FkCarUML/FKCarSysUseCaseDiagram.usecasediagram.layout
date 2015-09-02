@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="FKCarSysUseCaseDiagram">
+  <useCaseModelRootMoniker Id="cd2d6502-f4d6-4f37-9a14-894984efd9d9" />
+  <nestedChildShapes>
+    <actorShape Id="beaa0cf4-22f7-4fc6-8dfc-bcb361a83b3d" absoluteBounds="0.5, 1, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="4eb10a0a-437d-4a64-aca1-a67b8b8da0d8" LastKnownName="Boss" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="dc24667f-80e8-4dbe-abf2-ec52a5efea70" absoluteBounds="1.75, 0.75, 1.375, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="a32c7c95-b3f5-45b0-be8a-647d0212101e" LastKnownName="Manage Booking" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1 : 1.23148148148148); (1.75625318362549 : 1.17546272713885)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="4097a239-5c84-464b-ab36-ade1b0f9c75d" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="beaa0cf4-22f7-4fc6-8dfc-bcb361a83b3d" />
+        <useCaseShapeMoniker Id="dc24667f-80e8-4dbe-abf2-ec52a5efea70" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="b196b777-423e-4a31-b705-32dab76a2bae" absoluteBounds="1.875, 3, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="c2d9ab8a-8175-491f-981d-db9697c6063d" LastKnownName="SysManage" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(0.96875 : 1.5); (2.29353098454493 : 3.0140354109085)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="708ec73c-738f-4616-a629-99274377a298" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="beaa0cf4-22f7-4fc6-8dfc-bcb361a83b3d" />
+        <useCaseShapeMoniker Id="b196b777-423e-4a31-b705-32dab76a2bae" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="ac00bbf4-a84d-4313-8e60-faf641b0986f" absoluteBounds="1.875, 1.75, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="5fdcb0f1-f8ea-4ea2-b278-b5949eb4bf7c" LastKnownName="financial manage" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1 : 1.35714285714286); (2.07355109352499 : 1.81723618293928)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="7f1b133e-259b-4fbe-a427-b105d6912a8e" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="beaa0cf4-22f7-4fc6-8dfc-bcb361a83b3d" />
+        <useCaseShapeMoniker Id="ac00bbf4-a84d-4313-8e60-faf641b0986f" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

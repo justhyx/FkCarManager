@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="cd2d6502-f4d6-4f37-9a14-894984efd9d9" name="FKCarSysUseCaseDiagram" linkedPackageId="25f98579-cbff-42ef-b92a-9b70849a0503" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="0120ae0b-c327-4441-8c5d-0fb950ad0bc6">
+      <profileInstance Id="74af9482-6810-4408-9f20-a4866ba1750c" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="e3265e0a-8dfc-4222-a55e-6e232f5d3164">
+      <profileInstance Id="49c5124e-7205-4fe2-b58c-93404dbd8851" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="4eb10a0a-437d-4a64-aca1-a67b8b8da0d8" name="Boss" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c418ccb1-4c3e-422f-bf04-e316e9475554" />
+        <targetEnds>
+          <association Id="4097a239-5c84-464b-ab36-ade1b0f9c75d" isDerived="false" sourceEndRoleName="Boss" targetEndRoleName="Manage Booking" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a32c7c95-b3f5-45b0-be8a-647d0212101e" LastKnownName="Manage Booking" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="65b07b87-fce1-479d-a98d-6a4721112e4d" name="Boss" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ad0d90dc-dfe2-46af-9766-9e4e9ec20523" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d643769e-1cc0-4cf3-96bb-9a2b13493b8c" name="Manage Booking" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8809f992-c0aa-43d8-af2e-153a2d6e4a63" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f3b3e047-941e-4892-a509-54801493213f" />
+          </association>
+          <association Id="708ec73c-738f-4616-a629-99274377a298" isDerived="false" sourceEndRoleName="Boss" targetEndRoleName="SysManage" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c2d9ab8a-8175-491f-981d-db9697c6063d" LastKnownName="SysManage" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c88dfc14-52ce-4b10-a895-5f4ec5ebb870" name="Boss" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b5a58223-29a0-46b4-aca8-4f22f8bf0063" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3bdc7562-bb68-4a90-8e87-c4d998328069" name="SysManage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2097759f-a890-40de-947c-3e553a7c5e58" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="c5dd72e9-7801-4421-b357-c0ef0da8a806" />
+          </association>
+          <association Id="7f1b133e-259b-4fbe-a427-b105d6912a8e" isDerived="false" sourceEndRoleName="Boss" targetEndRoleName="financial manage" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="5fdcb0f1-f8ea-4ea2-b278-b5949eb4bf7c" LastKnownName="financial manage" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1010eb27-9b7b-45cb-9d2d-d102e892bc61" name="Boss" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="92c1e034-3e2d-41ea-95b3-251218774ebe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dc06288a-9122-41f5-a5ec-7480b2475eed" name="financial manage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="127462b3-905a-487c-8b58-39e96459e500" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="db8aed28-141f-427a-95b9-45488eedd8ce" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a32c7c95-b3f5-45b0-be8a-647d0212101e" name="Manage Booking" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5a262f63-3b30-42a1-9549-a69250fcdf55" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c2d9ab8a-8175-491f-981d-db9697c6063d" name="SysManage" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ba75318d-992a-479d-979d-80a46eb9fe87" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="5fdcb0f1-f8ea-4ea2-b278-b5949eb4bf7c" name="financial manage" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2a266080-1fe3-446e-9379-843575cabee8" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="25f98579-cbff-42ef-b92a-9b70849a0503" name="FkCarUML">
+    <elementDefinition Id="27e14520-b53c-4f23-af1b-45a2a3c767af" />
+  </package>
+</useCaseModelRoot>
