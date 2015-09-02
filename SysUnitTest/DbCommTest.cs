@@ -25,7 +25,7 @@ namespace SysUnitTest
             {
                 DateTime d = DateTime.Parse(o.ToString());
                 Assert.IsNotNull(d, "转换失败");
-                Assert.IsTrue(  DateTime.Today.Equals(d), "时间差大");
+                Assert.IsTrue(DateTime.Today.Day.Equals(d.Day),string.Format( "时间差大,Today.Day is {0},d.Day is {1}", DateTime.Today.Day, d.Day));
             }
             catch (Exception ex)
             {

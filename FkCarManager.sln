@@ -37,8 +37,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysUnitTest", "SysUnitTest\
 		{7DF1D5DF-5175-492C-8E60-A0C620AD0B0F} = {7DF1D5DF-5175-492C-8E60-A0C620AD0B0F}
 	EndProjectSection
 EndProject
-Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "FkCarUML", "FkCarUML\FkCarUML.modelproj", "{C201BFF1-C014-49B2-AF26-5BCAA2483ED7}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,12 +83,6 @@ Global
 		{7B68B04D-673F-4F1B-B508-0E00E0C81CD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7B68B04D-673F-4F1B-B508-0E00E0C81CD9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7B68B04D-673F-4F1B-B508-0E00E0C81CD9}.Release|x86.ActiveCfg = Release|Any CPU
-		{C201BFF1-C014-49B2-AF26-5BCAA2483ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C201BFF1-C014-49B2-AF26-5BCAA2483ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C201BFF1-C014-49B2-AF26-5BCAA2483ED7}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{C201BFF1-C014-49B2-AF26-5BCAA2483ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C201BFF1-C014-49B2-AF26-5BCAA2483ED7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C201BFF1-C014-49B2-AF26-5BCAA2483ED7}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -40,16 +40,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Address.cs" />
+    <Compile Include="Account.cs" />
+    <Compile Include="BillDetail.cs" />
+    <Compile Include="property\Address.cs" />
     <Compile Include="Bill.cs" />
     <Compile Include="Booking.cs" />
-    <Compile Include="Customer.cs" />
-    <Compile Include="Driver.cs" />
+    <Compile Include="property\Customer.cs" />
+    <Compile Include="property\Driver.cs" />
     <Compile Include="Cost.cs" />
     <Compile Include="Trip.cs" />
     <Compile Include="Flow.cs" />
     <Compile Include="User.cs" />
-    <Compile Include="Vehicle.cs" />
+    <Compile Include="property\Vehicle.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

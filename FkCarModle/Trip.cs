@@ -26,6 +26,9 @@ namespace FkCar.Modle
             TripState = "TripState",
             TripFlightMsg = "TripFlightMsg";
 
+       
+
+
         private void InitializationObjcet(int oid, Booking bookingoid, DateTime pickupitem, Vehicle car, Driver driver, string mainpassager, Address starting, Address destination, string flight, int paystate, float quote, int settlement, Flow state)
         {
             ObjID = new ComboValue<int>(TripOid, oid);
@@ -70,7 +73,7 @@ namespace FkCar.Modle
             checkmark = true;
             checksb = new StringBuilder();
 
-            
+
 
             alertmsg = (checksb.Length == 0) ? PassCheckMsg : checksb.ToString();
             checksb = null;
