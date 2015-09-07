@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MainFormMenuStrip = new System.Windows.Forms.MenuStrip();
             this.TSMBookingMng = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMBillManager = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,6 +39,7 @@
             this.MainStatusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripProgressBar1 = new System.Windows.Forms.ToolStripProgressBar();
+            this.TSMBooking = new System.Windows.Forms.ToolStripMenuItem();
             this.MainFormMenuStrip.SuspendLayout();
             this.MainStatusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +50,8 @@
             this.MainFormMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMBookingMng,
             this.TSMBillManager,
-            this.TSMSetting});
+            this.TSMSetting,
+            this.TSMBooking});
             this.MainFormMenuStrip.Location = new System.Drawing.Point(0, 0);
             this.MainFormMenuStrip.Name = "MainFormMenuStrip";
             this.MainFormMenuStrip.Size = new System.Drawing.Size(792, 34);
@@ -120,6 +123,13 @@
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
             this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 24);
             // 
+            // TSMBooking
+            // 
+            this.TSMBooking.Name = "TSMBooking";
+            this.TSMBooking.Size = new System.Drawing.Size(62, 30);
+            this.TSMBooking.Text = "下单";
+            this.TSMBooking.Click += new System.EventHandler(this.TSMBooking_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
@@ -128,6 +138,7 @@
             this.Controls.Add(this.MainStatusStrip);
             this.Controls.Add(this.MainFormMenuStrip);
             this.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.MainFormMenuStrip;
             this.Margin = new System.Windows.Forms.Padding(6);
@@ -156,6 +167,7 @@
         private System.Windows.Forms.ToolStripMenuItem TSMCustMng;
         private System.Windows.Forms.ToolStripMenuItem TSMCarMng;
         private System.Windows.Forms.ToolStripMenuItem TSMDriverMng;
+        private System.Windows.Forms.ToolStripMenuItem TSMBooking;
     }
 }
 

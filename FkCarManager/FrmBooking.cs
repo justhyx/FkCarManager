@@ -10,21 +10,19 @@ using System.Windows.Forms;
 
 namespace FkCarManager
 {
-    public partial class FormVehicleMng : Form
+    public partial class FrmBooking : Form
     {
-        private static FormVehicleMng singerton;
-
-        protected FormVehicleMng()
+        public FrmBooking()
         {
             InitializeComponent();
-
         }
 
+        private static FrmBooking singerton;
         public static bool GetForm(Form parent)
         {
             if (singerton == null)
             {
-                singerton = new FormVehicleMng();
+                singerton = new FrmBooking();
                 singerton.MdiParent = parent;
                 singerton.WindowState = FormWindowState.Maximized;
 
@@ -33,21 +31,9 @@ namespace FkCarManager
             singerton.Activate();
             return true;
         }
-
-        private void FormVehicleMng_Load(object sender, EventArgs e)
+        private void FrmBooking_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void FormVehicleMng_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (e.CloseReason == CloseReason.UserClosing)
-            {
-                this.Hide();
-                e.Cancel = true;
-            }
-        }
-
-
     }
 }

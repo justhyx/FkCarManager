@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using Pro.CommonUntil.MVC;
+using DbTool;
 namespace FkCar.BLL
 {
     public class TripBLL : BaseBLL<Trip>

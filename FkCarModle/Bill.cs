@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Pro.CommonUntil.MVC;
+using Pro.CommonUntil;
+using DbTool;
 
 namespace FkCar.Modle
 {
@@ -15,6 +16,6 @@ namespace FkCar.Modle
             throw new NotImplementedException();
         }
 
-       
+
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using FkCar.Modle;
 using System.Data;
-using Pro.CommonUntil.MVC;
+using DbTool;
 
 namespace FkCar.BLL
 {

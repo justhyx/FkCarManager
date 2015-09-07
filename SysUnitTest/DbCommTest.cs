@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Pro.DbTool;
+using DbTool;
 using Pro.CommonUntil;
-using Pro.CommonUntil.MVC;
+
 
 namespace SysUnitTest
 {

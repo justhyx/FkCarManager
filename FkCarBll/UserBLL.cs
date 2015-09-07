@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Pro.DbTool;
+using DbTool;
 using Pro.CommonUntil;
-using Pro.CommonUntil.MVC;
 namespace FkCar.BLL
 {
     public class UserBLL : BaseBLL<User>

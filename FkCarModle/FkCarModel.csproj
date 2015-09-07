@@ -42,11 +42,12 @@
   <ItemGroup>
     <Compile Include="Account.cs" />
     <Compile Include="BillDetail.cs" />
+    <Compile Include="Expert.cs" />
     <Compile Include="property\Address.cs" />
     <Compile Include="Bill.cs" />
     <Compile Include="Booking.cs" />
-    <Compile Include="property\Customer.cs" />
-    <Compile Include="property\Driver.cs" />
+    <Compile Include="Client.cs" />
+    <Compile Include="Driver.cs" />
     <Compile Include="Cost.cs" />
     <Compile Include="Trip.cs" />
     <Compile Include="Flow.cs" />
@@ -58,6 +59,10 @@
     <ProjectReference Include="..\..\Visual C#\SQLiteTest\SqliteTest\CommonTool\CommonUntil.csproj">
       <Project>{bc8c5163-fa26-4ea2-8b2e-4e74dd38f2a7}</Project>
       <Name>CommonUntil</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Visual C#\SQLiteTest\SqliteTest\DbTool\DbTool.csproj">
+      <Project>{7df1d5df-5175-492c-8e60-a0c620ad0b0f}</Project>
+      <Name>DbTool</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

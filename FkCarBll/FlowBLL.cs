@@ -1,12 +1,12 @@
 ﻿using FkCar.Modle;
-using Pro.CommonUntil.MVC;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-
+using DbTool;
 
 namespace FkCar.BLL
 {

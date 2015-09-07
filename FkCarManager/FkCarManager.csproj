@@ -51,6 +51,12 @@
     <Compile Include="FormVehicleMng.Designer.cs">
       <DependentUpon>FormVehicleMng.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBooking.Designer.cs">
+      <DependentUpon>FrmBooking.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormVehicleMng.resx">
       <DependentUpon>FormVehicleMng.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBooking.resx">
+      <DependentUpon>FrmBooking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -95,6 +104,10 @@
       <Project>{bc8c5163-fa26-4ea2-8b2e-4e74dd38f2a7}</Project>
       <Name>CommonUntil</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Visual C#\SQLiteTest\SqliteTest\DbTool\DbTool.csproj">
+      <Project>{7df1d5df-5175-492c-8e60-a0c620ad0b0f}</Project>
+      <Name>DbTool</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FkCarBll\FkCarBLL.csproj">
       <Project>{5c7a068a-af83-4ab1-b46c-095c25b3de69}</Project>
       <Name>FkCarBLL</Name>
@@ -103,6 +116,9 @@
       <Project>{c9974637-4e52-4d25-a2d8-8571321e5e93}</Project>
       <Name>FkCarModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resource\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

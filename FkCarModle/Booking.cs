@@ -1,17 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using Pro.CommonUntil.MVC;
+
 using Pro.CommonUntil;
+using DbTool;
+
 namespace FkCar.Modle
 {
     public class Booking : DbObject
     {
-        private void InitializationObjcet(int oid, DateTime createtime, Customer customer, int state)
+        private void InitializationObjcet(int oid, DateTime createtime, Client customer, int state)
         {
             ObjID = new ComboValue<int>(BookingOID, oid);
             CreateTime = new ComboValue<DateTime>(BookingCreateTime, createtime);
-            Customer = new ComboValue<Modle.Customer>(BookingCustomer, customer);
+            Customer = new ComboValue<Modle.Client>(BookingCustomer, customer);
             State = new ComboValue<int>(BookingState, state);
             bookingorder = new List<Trip>();
 
@@ -23,7 +25,7 @@ namespace FkCar.Modle
             InitializationObjcet(-1, DateTime.MinValue, null, BookingStateType_Ready);
             bookingorder.Add(Trip.NewTrip(this));
         }
-        public Booking(int tid, int oid, DateTime createtime, Customer customer, int state, IEnumerable<Trip> orders)
+        public Booking(int tid, int oid, DateTime createtime, Client customer, int state, IEnumerable<Trip> orders)
         {
             this.CreateFromDB(tid, false);
             InitializationObjcet(-1, DateTime.MinValue, null, BookingStateType_Ready);
@@ -41,7 +43,7 @@ namespace FkCar.Modle
         public ComboValue<int> ObjID { get; private set; }
         public ComboValue<DateTime> CreateTime { get; private set; }
 
-        public ComboValue<Customer> Customer { get; private set; }
+        public ComboValue<Client> Customer { get; private set; }
         //public int OrderCount { get; private set; }
 
         public ComboValue<int> State { get; private set; }
@@ -71,7 +73,7 @@ namespace FkCar.Modle
             checkmark = true;
             checksb = new StringBuilder();
 
-            if (this.Customer.Value.State.Value == Modle.Customer.CustomerState_Banned)
+            if (this.Customer.Value.State.Value == Modle.Client.CustomerState_Banned)
             {
                 checksb.Append("当前的客户被列入黑名单。不接受下单！");
                 checkmark = false;

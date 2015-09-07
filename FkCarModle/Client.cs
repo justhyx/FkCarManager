@@ -3,30 +3,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Pro.CommonUntil.MVC;
+using DbTool;
 using System.Text.RegularExpressions;
 namespace FkCar.Modle
 {
-    public class Customer : DbObject
+    public class Client : Account
     {
-        public static readonly int NewCu = 1, BanCu = 2;
+        public const int NewCu = 1, BanCu = 2;
         public static readonly string
            CustName = "CustName",
-            //客户名称 16 byte
+           //客户名称 16 byte
            CustFullName = "CustFullName",
-            //全称 64byte 英语，全角字符
+           //全称 64byte 英语，全角字符
            CustCNPhone = "CustCNPhone",
-            //中国大陆电话 默认 null
+           //中国大陆电话 默认 null
            CustHKPhone = "CustHKPhone",
-            // 香港电话
+           // 香港电话
            CustMail = "CustMail",
-            //联系邮箱            
+           //联系邮箱            
            CustType = "CustType",
-            //客户类型 
+           //客户类型 
            CustCounty = "CustCounty",
-            //国家
+           //国家
            CustState = "CustState",
-            // 客人状态。 一般就是有订单之后不能再删除
+           // 客人状态。 一般就是有订单之后不能再删除
            CustMeno = "CustMeno";
         //备注 ，特殊要求 付款账户等
 
@@ -44,13 +44,13 @@ namespace FkCar.Modle
 
         }
 
-        public Customer()
+        public Client()
         {
             this.CreateFromView();
             InitializationObjcet(ShortSpace, ShortSpace, ShortSpace, ShortSpace, ShortSpace, CustomerType_Individual, ShortSpace, 1, ShortSpace);
         }
 
-        public Customer(string name, string fullname, string cnphone, string hkphone, string mail, int type, string county, int state, string meno)
+        public Client(string name, string fullname, string cnphone, string hkphone, string mail, int type, string county, int state, string meno)
         {
             this.CreateFromView();
             InitializationObjcet(name, fullname, cnphone, hkphone, mail, type, county, state, meno);
@@ -62,7 +62,7 @@ namespace FkCar.Modle
         public ComboValue<string> CNPhone { get; private set; }
         public ComboValue<string> HKPhone { get; private set; }
         public ComboValue<string> Mail { get; private set; }
-        public ComboValue<int> CustomerType { get; private set; } // 1. 散客 ，2 长期客户 ， 3 公司单 4， 行家
+        public ComboValue<int> CustomerType { get; private set; } // 1. 散客 ， 2 公司单 3， 行家
 
         public static readonly int CustomerType_Individual = 1,
          CustomerType_LongTerm = 2,
